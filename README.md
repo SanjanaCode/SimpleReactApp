@@ -2,10 +2,10 @@
 
 ## Group Members
 
-**Sanjana Kanchamreddy**
-**Samir Aliyev**
-**Sebi Unipan**
-**Tushan Shahid**
+Sanjana Kanchamreddy  
+Samir Aliyev  
+Sebi Unipan  
+Tushan Shahid  
 
 ## Introduction
 
