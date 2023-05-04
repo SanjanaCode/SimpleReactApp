@@ -1,0 +1,33 @@
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 1.5rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.todo-list-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  width: 90%;
+  margin-top: 2rem;
+  border: 5px solid #000;
+  border-radius: 0.5rem;
+}
+
+.todo-list li:nth-child(odd) {
+  background-color: skyblue;
+}

@@ -1,0 +1,27 @@
+.route-button-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.route-button {
+  background-color: #282c34;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.route-button:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}

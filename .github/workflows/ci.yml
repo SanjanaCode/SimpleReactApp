@@ -1,0 +1,41 @@
+name: CI
+
+
+on:
+  # Defining when this CI will trigger. In this case it is on pull requests
+  pull_request:
+    branches: [ master ]
+  
+jobs:
+  build:
+
+    # To set the machine. We are going with ubuntu since its much faster
+    runs-on: ubuntu-latest
+
+    # Setting up node version
+    strategy:
+      matrix:
+        node-version: [16.x]
+    
+
+    steps:
+    - uses: actions/checkout@v2
+   # This is to setup Node.js
+    - name: Use Node.js ${{matrix.node-version}}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{matrix.node-version}}
+    # This is to install dependencies
+    - name: Install Dependencies
+      run: |
+        npm ci
+    # This is to check if our app builds without any errors
+    - name: Check if build works
+      run: |
+        npm run build
+    # This is for running the unit tests
+    - name: Run tests
+      run: |
+        npm run test
+
+        
